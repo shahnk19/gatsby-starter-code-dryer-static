@@ -1,5 +1,5 @@
-import * as React from "react"
+import * as React from "react";
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return <h1 className="text-3xl font-bold">Hello world!</h1>;
 }
