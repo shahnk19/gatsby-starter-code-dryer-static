@@ -8,6 +8,12 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://www.codedryer.com`,
+    title: `NINE4`,
+    description: `Make Stunning Websites`,
+    author: `Code Dryer`,
+  },
   plugins: [
     "gatsby-plugin-postcss",
     `gatsby-plugin-image`,

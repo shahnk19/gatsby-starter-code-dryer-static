@@ -2,6 +2,7 @@ import * as React from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
+import { SEO } from "../components/Seo";
 
 export default function Home() {
   return (
@@ -16,3 +17,7 @@ export default function Home() {
     </>
   );
 }
+
+export const Head = () => (
+  <SEO title="NINE4" description="Make Stunning Websites"></SEO>
+);
