@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
 
+require("dotenv").config({
+  path: `.env`,
+});
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -22,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "your-bucket-name",
-        region: "your-bucket-region",
+        bucketName: process.env.AWS_S3_BUCKET_NAME,
+        region: process.env.AWS_S3_BUCKET_REGION,
       },
     },
     {
@@ -31,7 +35,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "GA-TRACKING_ID", // Google Analytics / GA
+          process.env.GA_TRACKING_ID, // Google Analytics / GA
         ],
         // This object is used for configuration specific to this plugin
         pluginConfig: {
