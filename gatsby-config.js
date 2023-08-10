@@ -47,5 +47,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-code-dryer`,
   ],
 };
