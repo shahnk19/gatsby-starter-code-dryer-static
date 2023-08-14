@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby-plugin-s3 deploy",
+    "deploy": "gatsby clean && gatsby build && gatsby-plugin-s3 deploy",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "serve": "gatsby serve",
