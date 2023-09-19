@@ -19,5 +19,5 @@ export default function Home() {
 }
 
 export const Head = () => (
-  <SEO title="NINE4" description="Make Stunning Websites"></SEO>
+  <SEO title="Code Dryer" description="Make Stunning Websites"></SEO>
 );
